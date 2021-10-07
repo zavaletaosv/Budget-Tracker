@@ -20,3 +20,24 @@ self.addEventListener('install', e => {
             .then(() => self.skipWaiting())
     );
 });
+
+self.addEventListener('activate', e => {
+    const currentCaches = [STATIC_CACHE, RUNTIME_CACHE];
+    e.waitUntil(
+        caches
+        .keys()
+        .then(cacheNames => {
+            return cacheNames.filter(
+                cacheName => !currentCaches.includes(cacheName)
+            );
+        })
+        .then(cachesToDelete => {
+            return Promise.all(
+                cachesToDelete.map(cachesToDelete => {
+                    return caches.delete(cachesToDelete);
+                })
+            );
+        })
+        .then(() => self.clients.claim())
+    );
+});
