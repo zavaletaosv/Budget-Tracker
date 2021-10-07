@@ -13,7 +13,7 @@ Deployed Website Link: https://budget-tracker-oz.herokuapp.com/
 Once deployed, the application appears as the image attached below on a traditional desktop.
 
 <img
-src="./images/ss1.png"
+src="public/images/ss1.png"
 alt="A screenshot of the application" />
 
 ## Credits
