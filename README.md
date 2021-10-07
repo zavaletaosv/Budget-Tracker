@@ -2,7 +2,7 @@
 PWA: Online/Offline Budget Trackers
 ## Description
 
-
+This project was designed to allow users to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
 ## Links
 
 Repository Link: https://github.com/zavaletaosv/Budget-Tracker
