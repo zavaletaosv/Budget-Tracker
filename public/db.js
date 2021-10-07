@@ -18,3 +18,9 @@ request.onsuccess = function (e) {
 request.onerror = function (e) {
     console.log(e.target.errorCode);
 }
+
+function saveRecord(record) {
+    const transaction = db.transaction(['BudgetStore', 'readwrite']);
+    const store = transaction.objectStore('BudgetStore');
+    store.add(record);
+}
