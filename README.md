@@ -16,6 +16,10 @@ Once deployed, the application appears as the image attached below on a traditio
 src="public/images/ss1.png"
 alt="A screenshot of the application" />
 
+<img
+src="public/images/ss2.png"
+alt="A screenshot of the application" />
+
 ## Credits
 
 Collaborations of this project include the instructional staff, TAs, and fellow classmates in the Rice University Coding Bootcamp 2021 Cohort.
